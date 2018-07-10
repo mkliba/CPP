@@ -1,2 +1,33 @@
 Structs -> always default to public access -> designed for performance
 Classes -> always default to private access -> designed for maintenance
+
+Templates:
+
+	template<typename T>
+	class Net {
+	
+	private:
+		T minweight;
+		T maxweight;
+		Adj<T>* network;	
+	
+	
+	Net<float> n; -> compiler make a copy of the Net with T replaced by float
+	The methods of a templated class have to be on the header file of the class
+	
+	
+	constructor: called when creating an object
+	
+	Default constructor : Net();
+	
+	Methods:
+		template<typename T>
+	Net<T>::Net(const T min, const T max, const bool isDir, const string& type) {
+	
+	destructor: called when we deallocate an object	
+	
+	template<typename T>
+	Net<T>::~Net() {
+		if (network != nullptr)
+			delete network;
+	}	
