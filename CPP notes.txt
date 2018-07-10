@@ -30,4 +30,10 @@ Templates:
 	Net<T>::~Net() {
 		if (network != nullptr)
 			delete network;
-	}	
+	}
+
+	copy constructor:
+	
+	template<typename T>
+	Net<T>::Net(const Net<T>& rhs) {
+		setRange(rhs.minweight, rhs.maxweight);	
