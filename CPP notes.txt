@@ -1,0 +1,2 @@
+Structs -> always default to public access -> designed for performance
+Classes -> always default to private access -> designed for maintenance
