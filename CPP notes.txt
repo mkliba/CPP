@@ -37,3 +37,33 @@ Templates:
 	template<typename T>
 	Net<T>::Net(const Net<T>& rhs) {
 		setRange(rhs.minweight, rhs.maxweight);	
+		
+	Pointers:
+
+		int* w = type memory address
+		*_ = value at address
+		&_ = address of
+		
+	Arrays:
+	
+		each element is stored sequentially in the memory
+
+		in y[10];
+		y contains the address of the first element of the array
+		y[0] same as *y
+		y[1] same as *(y+1)
+		
+		byte addressed = every address holds a byte, so for an int we need 4 bytes. 
+		so for *(y+1) the compiler knows he needs to multiply the numbers of bytes for the type to get the address, -> *(y+1)(size of int in bytes)
+		
+		
+	Linked List:
+		the elemets are not sequentially stored in memory. The identifier holds the address of the first element. the next memory location of
+		each element contains the addressof the next element.
+		
+		
+		
+		AdjBasic (pure C arrays)
+		
+			array of structs for nodes
+			array of Structs for edges
