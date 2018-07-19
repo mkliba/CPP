@@ -63,7 +63,20 @@ Templates:
 		
 		
 		
-		AdjBasic (pure C arrays)
+	Recursion -> more stack space, slower, more readable(maintenance)
+	Iteration -> 
+	
+	const
+		imagine by default all variabe should be const unless they are not
+		not use it because of performance, but mainteance of the code
+		pass by value you may need to use const all the time, by reference not because if passing by reference must of the time you want to modify it,
+		if not pass use const.
 		
-			array of structs for nodes
-			array of Structs for edges
+		const int x = 7;
+		const int* y = &x;  point to the adddress of a constant
+					y = &w; this is legal because it still points to a constant
+					
+	typedef
+
+			
+					
